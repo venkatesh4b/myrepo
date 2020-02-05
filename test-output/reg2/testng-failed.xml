@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [reg2]" parallel="tests">
+  <test thread-count="5" name="test1(failed)" parallel="tests">
+    <parameter name="appUrl" value="https://opensource-demo.orangehrmlive.com/"/>
+    <parameter name="brname" value="chrome"/>
+    <classes>
+      <class name="com.tng.basics.OhrmAddEmpTest_Parameters">
+        <methods>
+          <include name="login"/>
+          <include name="addEmployee"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- com.tng.basics.OhrmAddEmpTest_Parameters -->
+    </classes>
+  </test> <!-- test1(failed) -->
+  <test thread-count="5" name="test2(failed)" parallel="tests">
+    <parameter name="appUrl" value="https://opensource-demo.orangehrmlive.com/"/>
+    <parameter name="brname" value="firefox"/>
+    <classes>
+      <class name="com.tng.basics.OhrmAddEmpTest_Parameters">
+        <methods>
+          <include name="login"/>
+          <include name="addEmployee"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- com.tng.basics.OhrmAddEmpTest_Parameters -->
+    </classes>
+  </test> <!-- test2(failed) -->
+</suite> <!-- Failed suite [reg2] -->

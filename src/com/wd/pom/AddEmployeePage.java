@@ -1,0 +1,41 @@
+package com.wd.pom;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class AddEmployeePage extends OhrmBase{
+	
+	public static By txt_FirstName = By.id("firstName");
+	public static By txt_LastName = By.id("lastName");
+	public static By btn_Save = By.id("btnSave");
+
+	// identification
+	public WebElement txtFirstName() {
+		return driver.findElement(txt_FirstName);
+	}
+
+	public WebElement txtLastName() {
+		return driver.findElement(txt_LastName);
+	}
+
+	public WebElement btnSave() {
+		return driver.findElement(btn_Save);
+	}
+
+	// operational
+	public void enterTextOnFirstName(String txtToEnter) {
+		txtFirstName().sendKeys(txtToEnter);
+		System.out.println(txtToEnter + " Entered on FirstName");
+	}
+
+	public void enterTextOnLastName(String txtToEnter) {
+		txtLastName().sendKeys(txtToEnter);
+		System.out.println(txtToEnter + " Entered on LastName");
+	}
+
+	public void clickOnSaveButton() {
+		btnSave().click();
+		System.out.println("Clicked on Save Button");
+	}
+
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<suite thread-count="5" parallel="tests" name="reg2">
+	<tests>
+		<test name="test1">
+			<parameters>
+					<parameter name="brname" value="chrome"/>
+					<parameter name="appUrl" value="https://opensource-demo.orangehrmlive.com/"/>
+			</parameters>
+			<classes>
+				<class name="com.tng.basics.OhrmAddEmpTest_Parameters"/>
+			</classes>
+		</test>
+		<test name="test2">
+			<parameters>
+				<parameter name="brname" value="firefox"/>
+				<parameter name="appUrl" value="https://opensource-demo.orangehrmlive.com/"/>
+			</parameters>
+			<classes>
+				<class name="com.tng.basics.OhrmAddEmpTest_Parameters"/>
+			</classes>
+		</test>
+	</tests>
+</suite>

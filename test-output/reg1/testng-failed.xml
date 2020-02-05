@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [reg1]">
+  <test thread-count="5" name="ParameterTest(failed)">
+    <parameter name="appUrl" value="https://opensource-demo.orangehrmlive.com/"/>
+    <parameter name="brname" value="firefox"/>
+    <classes>
+      <class name="com.tng.basics.OhrmAddEmpTest_Parameters">
+        <methods>
+          <include name="login"/>
+          <include name="addEmployee"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- com.tng.basics.OhrmAddEmpTest_Parameters -->
+    </classes>
+  </test> <!-- ParameterTest(failed) -->
+</suite> <!-- Failed suite [reg1] -->
