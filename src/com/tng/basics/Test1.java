@@ -44,6 +44,7 @@ public class Test1 {
 	@Test(priority = 1)
 	public void t2() {
 		System.out.println("this is t2 test method");
+		system.out.println("this is the change from git repo")
 	}
 
 }
