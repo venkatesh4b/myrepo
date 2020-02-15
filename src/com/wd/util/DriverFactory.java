@@ -23,7 +23,7 @@ public class DriverFactory {
 		switch (brname.toLowerCase()) {
 		case "chrome":
 			
-			System.setProperty("webdriver.chrome.driver", "E:\\Selenium Project Basics\\Browser Drivers\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "E:\\Selenium_Software\\BrowserDrivers\\chromedriver.exe");
 			
 			ChromeOptions co = new ChromeOptions();
 			co.addArguments("--disabled-notifications");
